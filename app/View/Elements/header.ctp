@@ -27,9 +27,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="./">
-                    <?php echo $this->Html->image('logo.png'); ?>
-                </a>
+                <?php echo $this->Html->link($this->Html->image('logo.png'),
+                                            '/pages/home',
+                                            array('class' => 'navbar-brand',
+                                                  'escape' => false,
+                                            )
+                );?>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,7 +52,11 @@
                             ));?></li>
                         </ul>
                     </li>
-                    <li><a href="../pages/about">Sobre</a></li>
+                    <li><?php echo $this->Html->link('Sobre', array(
+                                'controller' => 'pages',
+                                'action' => 'about',
+                                'full_base' => true
+                            ));?></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
