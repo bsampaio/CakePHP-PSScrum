@@ -1,0 +1,10 @@
+body{
+	padding-top: 50px;
+}
+div.principal{
+	padding: 40px 15px;
+	text-align: center;
+}
+div.sobre{
+    text-align: justify;
+}
