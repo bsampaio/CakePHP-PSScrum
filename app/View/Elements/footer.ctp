@@ -4,12 +4,9 @@
     </div>
     <!-- /.container -->
     <?php
-        echo $this->Html->script(array('jquery',
-                                'jquery-1.10.2',
-                                'jquery-2.1.1')
-             );
+        echo $this->Html->script('jquery');
+        echo $this->Html->script('bootstrap.min');
         $this->fetch('script');
-        echo $this->Html->script('bootstrap');
     ?>
 </body>
 
