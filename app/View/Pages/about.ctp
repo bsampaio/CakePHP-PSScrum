@@ -11,11 +11,81 @@
        Dessa forma, o SCRUM! ainda está em fase de desenvolvimento.
     </p>
     </div>
-    <h3>Equipe</h3>
-    <ul>
-        <li><h4>Ahlan Guarnier</h4></li>
-        <li><h4>Breno Sampaio</h4></li>
-        <li><h4>Diego Pasti</h4></li>
+    
+    <h2>Equipe</h2>
+    <br/>
+    <ul class="list-unstyled list-group">
+        <li>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                    <?php echo $this->Html->image('Ahlan_Guarnier.jpg');?>
+                    <div class="caption">
+                        <h3>Ahlan Guarnier</h3>
+                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
+                           Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+                           Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem
+                           é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien
+                           in monti palavris qui num significa nadis i pareci latim. Interessantiss 
+                           quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">
+                                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                            </a> 
+                            <a href="#" class="btn btn-default" role="button">
+                                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                            </a>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                    <?php echo $this->Html->image('Breno_Sampaio.jpg');?>
+                    <div class="caption">
+                        <h3>Breno Sampaio</h3>
+                        <p>Bacharelando em Sistemas de Informação pelo IFES - Serra, 
+                           participa atualmente do Laboratório de Extensão em Desenvolvimento de Sistemas, o LEDS,
+                           com conhecimentos em Java EE com Spring Framework, além de PHP com CakePHP Framework. Interessado
+                           em aplicações móveis e web por acreditar que elas serão o futuro na experiência do usuário.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">
+                                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                            </a> 
+                            <a href="#" class="btn btn-default" role="button">
+                                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                            </a>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                    <?php echo $this->Html->image('Diego_Pasti.jpg');?>
+                    <div class="caption">
+                        <h3>Diego Pasti</h3>
+                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
+                           Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.
+                           Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem
+                           é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien
+                           in monti palavris qui num significa nadis i pareci latim. Interessantiss 
+                           quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">
+                                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                            </a> 
+                            <a href="#" class="btn btn-default" role="button">
+                                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                            </a>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+         </li>
     </ul>
     <h3>Tecnologias</h3>
     <ul class="list-unstyled">
