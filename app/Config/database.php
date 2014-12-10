@@ -70,10 +70,10 @@ class DATABASE_CONFIG {
             $this->default = array(
                 'datasource' => 'Database/Mysql',
                 'persistent' => false,
-                'host' => $url['host'],
-                'login' => $url['user'],
-                'password' => $url['pass'],
-                'database' => substr($url['path'],1),
+                'host' => 'localhost',
+                'login' => 'root',
+                'password' => 'k1ckb0x1ng',
+                'database' => 'psscrum',
                 'prefix' => '',
                 //'encoding' => 'utf8',
             );
