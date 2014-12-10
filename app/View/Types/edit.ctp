@@ -1,21 +1,20 @@
-<div class="types form">
-<?php echo $this->Form->create('Type'); ?>
-	<fieldset>
-		<legend><?php echo __('Edit Type'); ?></legend>
-	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('name');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<h2><?php echo __("Edit Type");?></h2>
+<div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+<div class="row">
+    <?php echo $this->Form->create('types', array('inputDefaults' => array('div' => false))); ?>
+        <!-- Form group responsável pelo NOME do Tipo do Colaborador -->
+        <input type="hidden" name="id" id="id" value="<?php echo $this->request->data['Type']['id']; ?>"/>
+        <!-- Form group responsável pelo NOME do Tipo do Colaborador -->
+        <div class="form-group">
+            <div class="input-group">
+                <input value="<?php echo $this->request->data['Type']['name']; ?>" class="form-control" type="text" name="name" placeholder="Nome" required>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-asterisk">
+                    </span>
+                </span>
+            </div>
+        </div>
+        <input class="btn btn-success btn-lg btn-block" type="submit" value="Editar">
+    </form>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Type.id')), array(), __('Are you sure you want to delete # %s?', $this->Form->value('Type.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Types'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Employees'), array('controller' => 'employees', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Employee'), array('controller' => 'employees', 'action' => 'add')); ?> </li>
-	</ul>
 </div>

@@ -44,16 +44,35 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Colaboradores<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><?php echo $this->Html->link('Listar', array(
+                            <li>
+                            <?php echo $this->Html->link('Listar', array(
                                 'controller' => 'employees',
                                 'action' => 'index',
                                 'full_base' => true
-                            ));?></li>
-                            <li><?php echo $this->Html->link('Adicionar', array(
+                            ));?>
+                            </li>
+                            <li>
+                            <?php echo $this->Html->link('Adicionar', array(
                                 'controller' => 'employees',
                                 'action' => 'add',
                                 'full_base' => true
                             ));?></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">Tipos de Colaboradores</li>
+                            <li>
+                            <?php echo $this->Html->link('Listar', array(
+                                'controller' => 'types',
+                                'action' => 'index',
+                                'full_base' => true
+                            ));?>
+                            </li>
+                            <li>
+                            <?php echo $this->Html->link('Adicionar', array(
+                                'controller' => 'types',
+                                'action' => 'add',
+                                'full_base' => true
+                            ));?>
+                            </li>
                         </ul>
                     </li>
                     <li><?php echo $this->Html->link('Sobre', array(

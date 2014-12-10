@@ -57,10 +57,10 @@ class TypesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Type->create();
 			if ($this->Type->save($this->request->data)) {
-				$this->Session->setFlash(__('The type has been saved.'));
+				$this->Session->setFlash(__('The type has been saved.'),'success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The type could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The type could not be saved. Please, try again.'),'warning');
 			}
 		}
 	}
@@ -78,10 +78,10 @@ class TypesController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Type->save($this->request->data)) {
-				$this->Session->setFlash(__('The type has been saved.'));
+				$this->Session->setFlash(__('The type has been saved.'),'success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The type could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The type could not be saved. Please, try again.'),'warning');
 			}
 		} else {
 			$options = array('conditions' => array('Type.' . $this->Type->primaryKey => $id));
@@ -103,9 +103,9 @@ class TypesController extends AppController {
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Type->delete()) {
-			$this->Session->setFlash(__('The type has been deleted.'));
+			$this->Session->setFlash(__('The type has been deleted.'),'info');
 		} else {
-			$this->Session->setFlash(__('The type could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The type could not be deleted. Please, try again.'),'warning');
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

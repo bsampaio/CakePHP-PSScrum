@@ -1,19 +1,18 @@
-<div class="types form">
-<?php echo $this->Form->create('Type'); ?>
-	<fieldset>
-		<legend><?php echo __('Add Type'); ?></legend>
-	<?php
-		echo $this->Form->input('name');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Html->link(__('List Types'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Employees'), array('controller' => 'employees', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Employee'), array('controller' => 'employees', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+<h1><?php echo __('Add Type'); ?></h1>
+    <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div class="row">
+            <?php echo $this->Form->create('Type', array('inputDefaults' => array('div' => false))); ?>
+                <!-- Form group responsável pelo NOME do Tipo do Colaborador -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="name" placeholder="Nome" required>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-asterisk">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <input class="btn btn-success btn-lg btn-block" type="submit" value="Editar">
+            </form>
+        </div>
+    </div>
