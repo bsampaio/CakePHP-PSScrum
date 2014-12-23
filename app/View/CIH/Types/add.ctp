@@ -12,7 +12,7 @@
                         </span>
                     </div>
                 </div>
-                <input class="btn btn-success btn-lg btn-block" type="submit" value="Editar">
+                <input class="btn btn-primary btn-lg btn-block" type="submit" value="Add">
             </form>
         </div>
     </div>
