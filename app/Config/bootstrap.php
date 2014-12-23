@@ -107,8 +107,12 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
-//Mapeamento dos diretórios que representam o projeto do sistema (CCH, CIH e CGT)
+/*
 App::build(array(
         'Model' => array('../../app/Model/cgt/'),
         'View' => array('../../app/View/cih/'),
         'Controller' => array('../../app/Controller/cci/')));
+*/
+
+//Mapeamento dos diretórios que representam o projeto do sistema (CCH, CIH e CGT)
+CakePlugin::load(array('AutoAppBuild' => array('bootstrap' => true)));
