@@ -106,3 +106,9 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+//Mapeamento dos diretórios que representam o projeto do sistema (CCH, CIH e CGT)
+App::build(array(
+        'Model' => array('../../app/Model/cgt/'),
+        'View' => array('../../app/View/cih/'),
+        'Controller' => array('../../app/Controller/cci/')));
